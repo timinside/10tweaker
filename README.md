@@ -1,8 +1,4 @@
-
-
-![icons8-настройки-100 (1)](https://github.com/user-attachments/assets/18633822-8101-4aad-81c4-a37c0ab38f49)
-
-
+![XTweakerIcon100](https://github.com/user-attachments/assets/01403024-bcd3-483c-964f-0948c48e7506)
 
 # XTweaker #
 
