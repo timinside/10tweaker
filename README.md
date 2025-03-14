@@ -23,7 +23,7 @@ iwr 'https://gobobdev.github.io/programs/XTweaker.ps1' | iex
 **3. Онлайн установка 2:** Воспользуйтесь Online установщиком XTweaker. Скачать можно тут:
 
 ```
-blob:https://github.com/26273804-748f-43de-ac65-df92fae65972
+https://github.com/GoBobDev/XTweaker/blob/main/online/XTweakerSetupOnline.exe
 ```
 
 # Хотите помочь? #
