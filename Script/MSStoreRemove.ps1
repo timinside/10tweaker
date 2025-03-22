@@ -1,0 +1,1 @@
+Get-AppxPackage -allusers windowsstore | Remove-AppxPackage
