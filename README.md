@@ -25,14 +25,3 @@ iwr 'https://gobobdev.github.io/programs/XTweaker.ps1' | iex
 ```
 https://github.com/GoBobDev/XTweaker/raw/refs/heads/main/online/XTweakerSetupOnline.exe
 ```
-
-# Хотите помочь? #
-
-> [!CAUTION]
-> При использовании Beta версии, будьте осторожны!
-
-**Вы можете помочь нам сделав это:**
-
-1. Установите Beta / Release версию XTweaker.
-2. Если вы заметили баги, пожалуйста, напиши нам в Discord сервер.
-3. Если у вас есть идея для XTweaker, также напиши нам в Discord сервер.
