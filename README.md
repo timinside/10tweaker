@@ -3,7 +3,7 @@
 # XTweaker #
 
 > [!CAUTION]
-> Последнее обновление, которое будет выпущено - 1.3.0 
+> Эта программа более не поддерживается, новые версии выпускатся не будут. 1 Августа репозиторий будет удален.
 
 > [!WARNING]
 > Прежде чем использовать твики, создайте точку восстановления.
@@ -22,9 +22,4 @@
 
 ```
 iwr 'https://gobobdev.github.io/programs/XTweaker.ps1' | iex
-```
-**3. Онлайн установка 2:** Воспользуйтесь Online установщиком XTweaker. Скачать можно тут:
-
-```
-https://github.com/GoBobDev/XTweaker/raw/refs/heads/main/online/XTweakerSetupOnline.exe
 ```
