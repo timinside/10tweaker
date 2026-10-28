@@ -89,7 +89,7 @@ Always grab the latest release for the most stable and optimized experience.
 - [ ]  XClean: DNS switcher to pick a different DNS server
 - [ ]  Startup manager to review and disable startup programs
 - [ ]  Context menu editor for the right-click menu
-- [ ]  Drivers managment (Update/Install, Export/Import)
+- [ ]  Drivers management (Update/Install, Export/Import)
 
 ### Make a wish
 
