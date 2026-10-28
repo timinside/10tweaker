@@ -9,7 +9,7 @@
   <h6 align="center">formerly XTweaker</h6>
 
   ### Tweak Windows your way.
-  **A powerful tool for improving and customizing your Windows experience.**
+  **A powerful tool for improving and customizing your Windows experience, wrapped in a modern Material 3 interface.**
 
 </div>
 
