@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: ❓ Read the FAQ first
+    url: https://github.com/timinside/10tweaker#-faq
+    about: Quick answers about restore points, beta versions, and reporting bugs.
+  - name: 💬 News and community
+    url: https://t.me/bbzer0_community
+    about: Join the Telegram channel for updates, announcements, and project news.
