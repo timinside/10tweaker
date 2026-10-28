@@ -1,0 +1,12 @@
+# This file adds the built-in "Sponsor" button at the top of the repository page.
+# Uncomment the platforms you use and replace the values with your own.
+
+# github: [your-github-username]
+# patreon: your-username
+# ko_fi: your-username
+# buy_me_a_coffee: your-username
+# liberapay: your-username
+# open_collective: your-project
+
+# Any other service (DonationAlerts, Boosty, YooMoney, etc.), up to 4 links:
+custom: ["https://PUT_YOUR_DONATION_LINK_HERE"]
