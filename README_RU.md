@@ -2,7 +2,7 @@
 
   [English](README.md) · **Русский**
 
-  <img width="100" height="100" alt="10tweaker Icon" src="https://github.com/user-attachments/assets/01403024-bcd3-483c-964f-0948c48e7506" />
+  <img width="100" height="100" alt="10tweaker Icon" src="https://github.com/timinside/XTweaker/blob/main/.github/icon.png?raw=true" />
 
   # 10tweaker
 
