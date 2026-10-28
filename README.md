@@ -15,6 +15,11 @@
 
 ---
 
+> [!NOTE]
+> The current build still uses the old name, **XTweaker**, and the old icon.
+> 
+> It's the same project, just rebranded!
+
 ## ✨ What is 10tweaker?
 
 10tweaker lets you adjust a wide range of Windows settings and optimize your workflow, all from one place. Whether you like to dig into every option yourself or just want things to work better without the hassle, it keeps the path short.
