@@ -1,0 +1,57 @@
+{
+  "$schema": "./trove.schema.json",
+  "schemaVersion": 1,
+  "name": "10tweaker Extra",
+  "updated": "2026-11-06",
+  "packages": [
+    {
+      "id": "timinside.betterdevelnext",
+      "name": "BetterDevelNext",
+      "publisher": "timinside",
+      "description": "A fast, friendly IDE for building Windows apps, powered by DevelNext and FXEdition.",
+      "version": "17.2.2",
+      "homepage": "https://github.com/timinside/BetterDevelNext",
+      "license": "MPL-2.0",
+      "tags": ["ide", "development", "jphp"],
+      "install": {
+        "type": "exe",
+        "url": "https://github.com/timinside/BetterDevelNext/releases/download/17.2.2/BetterDevelNextSetup.exe",
+        "sha256": "7a7f73d1cba372e3340054953722f1f176d1038fcd8385394db50148081db8ed",
+        "silentArgs": "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART",
+        "requiresAdmin": true
+      }
+    },
+    {
+      "id": "timinside.bbruntime",
+      "name": "bbruntime",
+      "publisher": "timinside",
+      "description": "Runtime library used by bbzer0's apps. Some programs cannot start without it.",
+      "version": "1.2",
+      "homepage": "https://github.com/timinside/bbruntime",
+      "tags": ["runtime", "library"],
+      "install": {
+        "type": "exe",
+        "url": "https://github.com/timinside/bbruntime/releases/download/1.2/bbruntimeSetup.exe",
+        "sha256": "e7bfa10a2af291c6b5fc5cdac9915b923479390d81209051f61e864860c4082e",
+        "silentArgs": "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART",
+        "requiresAdmin": true
+      }
+    },
+    {
+      "id": "timinside.nextjppm",
+      "name": "NextJPPM",
+      "publisher": "timinside",
+      "description": "Better JPHP Package Manager.",
+      "version": "0.8.0",
+      "homepage": "https://github.com/timinside/NextJPPM",
+      "tags": ["package-manager", "development", "jphp"],
+      "install": {
+        "type": "exe",
+        "url": "https://github.com/timinside/NextJPPM/releases/download/0.8.0/NextSetup.exe",
+        "sha256": "43dbf64372c3f3e03657b83c6ca8328b8fd56837eb103429e0a87ea47745c867",
+        "silentArgs": "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART",
+        "requiresAdmin": true
+      }
+    }
+  ]
+}

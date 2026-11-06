@@ -1,0 +1,169 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/timinside/10tweaker/main/packages/trove.schema.json",
+  "title": "Trove package source",
+  "description": "Declarative catalog consumed by the Trove utility in 10tweaker. Direct downloads must use HTTPS and a SHA-256 digest.",
+  "type": "object",
+  "required": ["schemaVersion", "packages"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "schemaVersion": {
+      "const": 1
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80
+    },
+    "updated": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "packages": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/package"
+      }
+    }
+  },
+  "$defs": {
+    "httpsUrl": {
+      "type": "string",
+      "pattern": "^https://[^\\s]+$",
+      "maxLength": 2048
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "package": {
+      "type": "object",
+      "required": ["id", "name", "version", "install"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(\\.[a-z0-9][a-z0-9-]*)+$",
+          "maxLength": 120
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "publisher": {
+          "type": "string",
+          "maxLength": 120
+        },
+        "description": {
+          "type": "string",
+          "maxLength": 800
+        },
+        "version": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 64
+        },
+        "homepage": {
+          "$ref": "#/$defs/httpsUrl"
+        },
+        "license": {
+          "type": "string",
+          "maxLength": 80
+        },
+        "tags": {
+          "type": "array",
+          "maxItems": 12,
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 32
+          }
+        },
+        "icon": {
+          "$ref": "#/$defs/httpsUrl"
+        },
+        "install": {
+          "$ref": "#/$defs/install"
+        }
+      }
+    },
+    "install": {
+      "type": "object",
+      "required": ["type"],
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "enum": ["winget", "exe", "msi", "zip"]
+        },
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "scope": {
+          "enum": ["user", "machine"]
+        },
+        "url": {
+          "$ref": "#/$defs/httpsUrl"
+        },
+        "sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "silentArgs": {
+          "type": "string",
+          "maxLength": 300
+        },
+        "requiresAdmin": {
+          "type": "boolean"
+        },
+        "extractTo": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 300
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": { "type": { "const": "winget" } },
+            "required": ["type"]
+          },
+          "then": {
+            "required": ["id"]
+          }
+        },
+        {
+          "if": {
+            "properties": { "type": { "const": "exe" } },
+            "required": ["type"]
+          },
+          "then": {
+            "required": ["url", "sha256"]
+          }
+        },
+        {
+          "if": {
+            "properties": { "type": { "const": "msi" } },
+            "required": ["type"]
+          },
+          "then": {
+            "required": ["url", "sha256"]
+          }
+        },
+        {
+          "if": {
+            "properties": { "type": { "const": "zip" } },
+            "required": ["type"]
+          },
+          "then": {
+            "required": ["url", "sha256", "extractTo"]
+          }
+        }
+      ]
+    }
+  }
+}
