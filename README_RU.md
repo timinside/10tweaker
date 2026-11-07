@@ -27,8 +27,8 @@
 Склонируйте репозиторий и откройте эту папку:
 
 ```bash
-git clone https://github.com/timinside/10tweaker.git
-cd 10tweaker/sources
+git clone -b sources --single-branch https://github.com/timinside/10tweaker.git
+cd 10tweaker
 ```
 
 Не хотите использовать Git? Нажмите **Code → Download ZIP** на странице репозитория.
